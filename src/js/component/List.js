@@ -9,11 +9,16 @@ import { ToDoCount } from "./ToDoCount";
 
 //create your first component
 export const List = () => {
-	const [liststate, setlistState] = useState()
+	const [inputValue, setInputValue] = useState("");
+	const [addNewTask, setAddNewTask] = useState([])
 	return (
 		<div className="container justify-content-center">
 			<Title/>
-			<Input/>
+			<Input setInputValue={setInputValue}
+					addNewTask = {addNewTask} 
+					setAddNewTask = {setAddNewTask}
+					inputValue= {inputValue}
+			/>
 			<ToDotext/>
 			<ToDoCount/>
 		</div>
