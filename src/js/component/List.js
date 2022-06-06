@@ -10,7 +10,7 @@ import { ToDoCount } from "./ToDoCount";
 //create your first component
 export const List = () => {
 	const [inputValue, setInputValue] = useState("");
-	const [addNewTask, setAddNewTask] = useState([])
+	const [addNewTask, setAddNewTask] = useState([]);
 	return (
 		<div className="container justify-content-center">
 			<Title/>
