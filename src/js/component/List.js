@@ -29,7 +29,7 @@ export const List = () => {
 					/>
 				))}
 			</div>
-			<ToDoCount/>
+			<ToDoCount list={addNewTask}/>
 		</div>
 	);
 };

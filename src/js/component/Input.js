@@ -11,6 +11,7 @@ export const Input = (props) => {
         if (e.key === "Enter") {
             props.setAddNewTask([...props.addNewTask,{text: props.inputValue, completed: false, id: Math.random() * 1000}])
             e.preventDefault();
+            props.setInputValue("");
         }
     }
     
