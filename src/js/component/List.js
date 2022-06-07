@@ -19,7 +19,16 @@ export const List = () => {
 					setAddNewTask = {setAddNewTask}
 					inputValue= {inputValue}
 			/>
-			<ToDotext/>
+			<div className="container">
+				{addNewTask.map((task) => (
+					<ToDotext key={task.id}
+						addNewTask={addNewTask}
+						setAddNewTask={setAddNewTask}
+						text = {task.text}
+						task = {task}
+					/>
+				))}
+			</div>
 			<ToDoCount/>
 		</div>
 	);
