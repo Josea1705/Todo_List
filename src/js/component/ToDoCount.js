@@ -5,7 +5,7 @@ export const ToDoCount = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    {props.list.lenght} items left...
+                    {props.list.length} items left...
                 </div>
             </div>
         </div>

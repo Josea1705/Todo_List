@@ -12,7 +12,7 @@ export const List = () => {
 	const [inputValue, setInputValue] = useState("");
 	const [addNewTask, setAddNewTask] = useState([]);
 	return (
-		<div className="container justify-content-center">
+		<div className="container">
 			<Title/>
 			<Input setInputValue={setInputValue}
 					addNewTask = {addNewTask} 
@@ -29,7 +29,8 @@ export const List = () => {
 					/>
 				))}
 			</div>
-			<ToDoCount list={addNewTask}/>
+
+			<ToDoCount list={addNewTask}/> 
 		</div>
 	);
 };

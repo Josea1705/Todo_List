@@ -9,7 +9,7 @@ export const Input = (props) => {
     const SubmitTodoHandlrer = (e) => {
         
         if (e.key === "Enter") {
-            props.setAddNewTask([...props.addNewTask,{text: props.inputValue, completed: false, id: Math.random() * 1000}])
+            props.setAddNewTask([...props.addNewTask,{text: props.inputValue, id: Math.random() * 1000}])
             e.preventDefault();
             props.setInputValue("");
         }
@@ -21,7 +21,8 @@ export const Input = (props) => {
                 value= {props.inputValue}
                 onKeyDown={SubmitTodoHandlrer}
                 onChange={inputHandler}  
-                type="text" className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                type="text" className="form-control" placeholder="What needs to be done?" aria-label="What need to be done?" aria-describedby="button-addon2"/>
+                    
         </div>
     )
 }
